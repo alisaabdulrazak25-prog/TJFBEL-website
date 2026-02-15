@@ -1,0 +1,149 @@
+/* Center the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+    text-align: center;   /* centers text on page */
+}
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    right: 400px;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Remove underline from links */
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Different colors for each link */
+nav a:nth-child(1) {
+    color: rosybrown;
+
+}
+
+nav a:nth-child(2) {
+    color: #00cc66;
+      
+}
+
+nav a:nth-child(3) {
+    color: #ffcc00;
+       
+}
+
+nav a:nth-child(4) {
+    color: #66ccff;
+      
+
+}
+nav a:nth-child(5){
+    color: orangered;
+
+
+}
+nav a:nth-child(6){
+    color: blueviolet;
+}
+/* Hover effect */
+nav a:hover {
+    opacity: 0.7;
+}
+/*Add spacing between icon and text*/
+nav a i{
+    margin-right: 8px;
+}
+
+/* Content box in center */
+.container {
+    background-color: white;
+    width: 70%;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    color: #002b5c;
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    color: #444;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.home-img {
+    width: 85%;
+    height: 530px;
+    display: block;
+    object-fit:cover;
+}
+
+/* Navigation on top of image */
+.hero-nav {
+    position: absolute;
+    top: 50px;               /* distance from top of image */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Style links */
+.hero-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;            /* links white on image */
+}
+
+/* Hover effect */
+.hero-nav a:hover {
+    color: #ffcc00;          /* yellow on hover */
+}
+
+/* Spacing for icon in links */
+.hero-nav a i {
+    margin-right: 8px;
+}
+
+/* Text in middle of image */
+.hero-text {
+    position: absolute;
+    top: 50%;                /* vertical center */
+    left: 50%;               /* horizontal center */
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+body.dark {
+    background-color: #111;
+    color: white;
+}
+
+body.dark nav {
+    background: #000;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
